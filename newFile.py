@@ -1,5 +1,11 @@
-print("Hello World")
 
+# Adding a function that can be called to handle new Users
 
-# adding changes to the newFile.py on the GitHub Repo
-# directly on the GitHub portal!
+def newUsers(userName):
+  if(type(userName) == str):
+    print("valid userName")
+    return userName
+  else:
+    print("invalid userName")
+    print("please provide a string")
+    return ""
